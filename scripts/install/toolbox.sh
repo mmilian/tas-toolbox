@@ -43,10 +43,10 @@ else
     echo "Not in PATH: $local_bin_dir"
     cmd="$(export_path_cmd "$local_bin_dir")"
     append_to_file "${HOME}/.bashrc" "$cmd"
+    export PATH="${PATH}:${local_bin_dir}"
     # append_to_file "${ZDOTDIR:-"$HOME"}/.zshrc" "$cmd"
 fi
 
-echo "Successfully installed $(toolbox) in $TAS_TOOLBOX_HOME."
+# echo "Successfully installed $(toolbox) in ${TAS_TOOLBOX_HOME}"
 echo "To use toolbox, restart your shell or reload your .bashrc-like config file"
 
-export PATH="${PATH}:${local_bin_dir}"
