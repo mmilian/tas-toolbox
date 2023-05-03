@@ -38,8 +38,9 @@ chmod +x *.sh
 ./bootstrap_toolbox.sh
 
 if echo "$PATH" | grep -q "$local_bin_dir"; then
-    :
+    echo "Already in PATH: $local_bin_dir"
 else
+    echo "Not in PATH: $local_bin_dir"
     cmd="$(export_path_cmd "$local_bin_dir")"
     append_to_file "${HOME}/.bashrc" "$cmd"
     # append_to_file "${ZDOTDIR:-"$HOME"}/.zshrc" "$cmd"
