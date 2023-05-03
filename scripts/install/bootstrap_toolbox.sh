@@ -113,7 +113,7 @@ prop () {
    echo $PROP_VALUE
 }
 
-install_toolbox () {
+bootstrap_toolbox () {
   info 'installing toolbox'
 
   local overwrite_all=false backup_all=false skip_all=false
@@ -150,7 +150,7 @@ create_env_file () {
     fi
 }
 
-install_toolbox
+bootstrap_toolbox
 create_env_file
 
 

@@ -3,5 +3,5 @@
 ## Instalation
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/mmilian/tas-toolbox/main/install/install_toolbox.sh)
+bash <(curl -sL https://raw.githubusercontent.com/mmilian/tas-toolbox/main/scripts/install/bootstrap_toolbox.sh)
 ```
