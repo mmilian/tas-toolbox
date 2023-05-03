@@ -120,6 +120,7 @@ bootstrap_toolbox () {
 
   find -H "$TAS_TOOLBOX_HOME" -maxdepth 3 -name 'links.prop' -not -path '*.git*' | while read linkfile
   do
+    echo "Linking $linkfile"
     cat "$linkfile" | while read line
     do
         user "Linking $line"
