@@ -50,5 +50,3 @@ echo "To use toolbox, restart your shell or reload your .bashrc-like config file
 echo "Check https://github.com/denisidoro/navi for more info"
 
 export PATH="${PATH}:${local_bin_dir}"
-
-return 0

@@ -122,6 +122,7 @@ bootstrap_toolbox () {
   do
     cat "$linkfile" | while read line
     do
+        user "Linking $line"
         local src dst dir
         src=$(eval echo "$line" | cut -d '=' -f 1)
         dst=$(eval echo "$line" | cut -d '=' -f 2)
