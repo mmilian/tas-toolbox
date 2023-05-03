@@ -2,7 +2,7 @@
 #
 # bootstrap installs things.
 
-TAS_TOOLBOX_HOME="$HOME/.tas-toolbox"
+TAS_TOOLBOX_HOME="$HOME\.tas-toolbox"
 
 set -e
 
@@ -118,7 +118,7 @@ bootstrap_toolbox () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
-  find -H "$TAS_TOOLBOX_HOME" -maxdepth 2 -name 'links.prop' -not -path '*.git*' | while read linkfile
+  find -H "$TAS_TOOLBOX_HOME" -maxdepth 3 -name 'links.prop' -not -path '*.git*' | while read linkfile
   do
     cat "$linkfile" | while read line
     do
