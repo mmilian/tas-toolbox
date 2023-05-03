@@ -22,11 +22,13 @@ mkdir -p $local_bin_dir
 TAS_TOOLBOX_HOME="$HOME/.tas-toolbox"
 tas_toolbox_repo='git@github.com:mmilian/tas-toolbox.git'
 
-if [ -f $TAS_TOOLBOX_HOME ]; then
+if [ -d $TAS_TOOLBOX_HOME ]; then
     cd $TAS_TOOLBOX_HOME
+    echo "Pulling latest changes from $TAS_TOOLBOX_HOME"
     git pull
 else
     mkdir -p $TAS_TOOLBOX_HOME
+    echo "Cloning $TAS_TOOLBOX_REPO to $TAS_TOOLBOX_HOME"
     git clone $TAS_TOOLBOX_REPO $TAS_TOOLBOX_HOME
 fi
 
