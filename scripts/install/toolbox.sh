@@ -40,7 +40,7 @@ chmod +x *.sh
 if echo "$PATH" | grep -q "$local_bin_dir"; then
     :
 else
-    local -r cmd="$(export_path_cmd "$local_bin_dir")"
+    cmd="$(export_path_cmd "$local_bin_dir")"
     append_to_file "${HOME}/.bashrc" "$cmd"
     append_to_file "${ZDOTDIR:-"$HOME"}/.zshrc" "$cmd"
 fi

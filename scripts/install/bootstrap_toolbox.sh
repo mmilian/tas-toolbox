@@ -166,4 +166,4 @@ done
 
 echo ''
 echo ''
-success 'All installed!'
+success 'Toolbox bootstraped!'
