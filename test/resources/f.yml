@@ -1,0 +1,15 @@
+---
+- name: TASIP
+  swc: AA123654
+  swcis:
+  - stage: Dev
+    swci: AT112233
+  - stage: Te1
+    swci: AT123242
+- name: Mastermind
+  swc: AA44345
+  swcis:
+  - stage: Dev
+    swci: AT44345
+  - stage: Te1
+    swci: AT412323
