@@ -20,7 +20,7 @@ local_bin_dir="~/.local/bin"
 mkdir -p $local_bin_dir
 
 TAS_TOOLBOX_HOME="$HOME/.tas-toolbox"
-tas_toolbox_repo='git@github.com:mmilian/tas-toolbox.git'
+tas_toolbox_repo="git@github.com:mmilian/tas-toolbox.git"
 
 if [ -d $TAS_TOOLBOX_HOME ]; then
     cd $TAS_TOOLBOX_HOME
