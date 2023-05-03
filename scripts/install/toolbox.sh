@@ -28,8 +28,8 @@ if [ -d $TAS_TOOLBOX_HOME ]; then
     git pull
 else
     mkdir -p $TAS_TOOLBOX_HOME
-    echo "Cloning $TAS_TOOLBOX_REPO to $TAS_TOOLBOX_HOME"
-    git clone $TAS_TOOLBOX_REPO $TAS_TOOLBOX_HOME
+    echo "Cloning $tas_toolbox_repo to $TAS_TOOLBOX_HOME"
+    git clone $tas_toolbox_repo $TAS_TOOLBOX_HOME
 fi
 
 cd $TAS_TOOLBOX_HOME
