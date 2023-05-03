@@ -2,7 +2,7 @@
 #
 # bootstrap installs things.
 
-TAS_TOOLBOX_HOME="$HOME\.tas-toolbox"
+TAS_TOOLBOX_HOME="$HOME/.tas-toolbox"
 
 set -e
 
@@ -146,6 +146,7 @@ create_env_file () {
     if test -f "$HOME/.tas_toolbox_env.sh"; then
         success "$HOME/.tas_toolbox_env file already exists, skipping"
     else
+        echo "export TAS_TOOLBOX_HOME=$TAS_TOOLBOX_HOME"
         echo "export TAS_TOOLBOX_HOME=$TAS_TOOLBOX_HOME" > $HOME/.tas_toolbox_env.sh
         success 'created ~/.tas_toolbox_env.sh'
     fi
