@@ -15,7 +15,7 @@ append_to_file() {
     fi
 }
 
-local_bin_dir="~/.local/bin"
+local_bin_dir="$HOME/.local/bin"
 # just in case
 mkdir -p $local_bin_dir
 
