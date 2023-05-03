@@ -2,7 +2,7 @@
 #
 # bootstrap installs things.
 
-TAS_TOOLBOX_HOME="$HOME\.tas-toolbox"
+TAS_TOOLBOX_HOME="$HOME/.tas-toolbox"
 
 set -e
 
